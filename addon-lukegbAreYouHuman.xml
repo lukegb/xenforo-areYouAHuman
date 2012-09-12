@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="lukegbAreYouHumanXenForo" title="[LukeGB] Are You Human? CAPTCHA" version_string="v0.1" version_id="1" url="http://www.lukegb.com" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="option_captcha_render" execute_order="10" callback_class="LukeGB_AreYouHuman_Override" callback_method="codeEventOptionCaptchaRender" active="1" description=""/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <optiongroups>
+    <group group_id="lukegb_ayah" display_order="1" debug_only="0"/>
+    <option option_id="ayahPublisherKey" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="lukegb_ayah" display_order="1"/>
+    </option>
+    <option option_id="ayahScoringKey" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="lukegb_ayah" display_order="1"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_ayahPublisherKey" version_id="1" version_string="v0.1"><![CDATA[Publisher Key]]></phrase>
+    <phrase title="option_ayahPublisherKey_explain" version_id="1" version_string="v0.1"><![CDATA[]]></phrase>
+    <phrase title="option_ayahScoringKey" version_id="1" version_string="v0.1"><![CDATA[Scoring Key]]></phrase>
+    <phrase title="option_ayahScoringKey_explain" version_id="1" version_string="v0.1"><![CDATA[]]></phrase>
+    <phrase title="option_group_lukegb_ayah" version_id="1" version_string="v0.1"><![CDATA[[LukeGB] Are You a Human? CAPTCHA]]></phrase>
+    <phrase title="option_group_lukegb_ayah_description" version_id="1" version_string="v0.1"><![CDATA[The two keys required for Are You a Human? to function correctly can be found on the <a href="http://portal.areyouahuman.com/dashboard"><b>AYAH Dashboard</b></a>.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <bb_code_media_sites/>
+</addon>
